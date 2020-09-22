@@ -1,5 +1,6 @@
-import { Meteor } from 'meteor/meteor';
+import { Meteor } from 'meteor/meteor'
+import '../collections/resolution'
 
 Meteor.startup(() => {
-  // code to run on server at startup
-});
+	// code to run on server at startup
+})
