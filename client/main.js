@@ -25,3 +25,9 @@ Template.body.events({
 		return false
 	},
 })
+
+Template.resolution.events({
+	'click .delete': function () {
+		Resolutions.remove(this._id)
+	},
+})
