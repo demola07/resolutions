@@ -24,10 +24,7 @@ Template.body.events({
 	'submit .new-resolution': function (event) {
 		const title = event.target.title.value
 
-		Resolutions.insert({
-			title,
-			createdAt: new Date(),
-		})
+		Meteor.call('addResolution', title)
 
 		event.target.title.value = ''
 
