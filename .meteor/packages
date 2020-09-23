@@ -20,8 +20,15 @@ typescript@3.7.6              # Enable TypeScript syntax in .ts and .tsx modules
 shell-server@0.5.0            # Server-side component of the `meteor shell` command
 
 autopublish@1.0.7             # Publish all data to the clients (for prototyping)
-insecure@1.0.7                # Allow all DB writes from clients (for prototyping)
 session
 mquandalle:stylus
 accounts-password
 accounts-ui
+accounts-twitter
+twitter-config-ui
+accounts-facebook
+facebook-config-ui
+accounts-google
+google-config-ui
+accounts-github
+github-config-ui
