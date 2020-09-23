@@ -11,4 +11,17 @@ Template.body.helpers({
 	},
 })
 
-Template.body.events({})
+Template.body.events({
+	'submit .new-resolution': function (event) {
+		const title = event.target.title.value
+
+		Resolutions.insert({
+			title,
+			createdAt: new Date(),
+		})
+
+		event.target.title.value = ''
+
+		return false
+	},
+})
